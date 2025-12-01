@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="/speakid-blog/assets/style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <a href="/speakid-blog/">SPEAKID Blog</a>
+    </header>
+
+    <article class="post">
+      <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        
+        <div class="post-meta">
+          {% if page.author %}
+          <span class="post-author">
+            {{ page.author }}
+          </span>
+          {% endif %}
+          
+          {% if page.date %}
+          <span class="post-date">
+            {{ page.date | date: "%d.%m.%Y" }}
+          </span>
+          {% endif %}
+        </div>
+
+        {% if page.tags and page.tags.size > 0 %}
+        <div class="post-tags">
+          {% for tag in page.tags %}
+          <span class="post-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </header>
+
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </article>
+
+  </body>
+</html>
+
