@@ -144,19 +144,45 @@ a:hover {
 /* Header */
 header {
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
 }
 
-header a {
-  font-size: var(--font_size_medium);
-  font-weight: 700;
-  color: var(--color_black);
+.logo-link {
+  display: inline-block;
   border-bottom: none;
   text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-header a:hover {
-  color: var(--color_red_default);
+.logo-link:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
   border-bottom: none;
+}
+
+.logo-link:active {
+  transform: scale(0.98);
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  border-radius: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    height: 28px;
+  }
 }
 
 /* Article (for default layout) */
