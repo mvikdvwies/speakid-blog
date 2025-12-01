@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     {% include head.html %}
-</head>
-<body>
+    <link rel="stylesheet" href="/speakid-blog/assets/style.css">
+  </head>
 
-<main style="max-width: 760px; margin: 40px auto; padding: 0 20px;">
-    {{ content }}
-</main>
+  <body>
 
-</body>
+    <header>
+      <a href="/speakid-blog/">SPEAKID Blog</a>
+    </header>
+
+    <article>
+      {{ content }}
+    </article>
+
+  </body>
 </html>
+
