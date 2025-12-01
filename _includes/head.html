@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ page.title | escape }} | SPEAKID Blog</title>
+
+{% if page.description %}
+<meta name="description" content="{{ page.description | escape }}">
+{% endif %}
+
+<link rel="icon" type="image/png" href="{{ '/logo.png' | relative_url }}">
+
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:image" content="{{ '/og-default.png' | absolute_url }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ page.url | absolute_url }}"/>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | escape }}">
+<meta name="twitter:description" content="{{ page.description | escape }}">
+<meta name="twitter:image" content="{{ '/og-default.png' | absolute_url }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ page.url | absolute_url }}">
