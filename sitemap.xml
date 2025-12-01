@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://mvikdvwies.github.io/speakid-blog/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/first-article.md</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/lessons-for-kids-online.md</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/english-games-online.md</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
