@@ -320,11 +320,16 @@ small {
   white-space: nowrap;
 }
 
+.post-footer {
+  margin-top: var(--gap_large);
+  padding-top: var(--gap_large);
+  border-top: 1px solid var(--color_grey_light);
+}
+
 .post-tags {
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap_small);
-  margin-top: var(--gap_large);
   justify-content: flex-start;
 }
 

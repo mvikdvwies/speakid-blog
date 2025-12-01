@@ -30,19 +30,21 @@
           </span>
           {% endif %}
         </div>
-
-        {% if page.tags and page.tags.size > 0 %}
-        <div class="post-tags">
-          {% for tag in page.tags %}
-          <span class="post-tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
       </header>
 
       <div class="post-content">
         {{ content }}
       </div>
+
+      {% if page.tags and page.tags.size > 0 %}
+      <footer class="post-footer">
+        <div class="post-tags">
+          {% for tag in page.tags %}
+          <span class="post-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </footer>
+      {% endif %}
     </article>
 
   </body>
