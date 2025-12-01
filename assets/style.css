@@ -284,17 +284,18 @@ small {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.post-date-top {
+  font-size: var(--font_size_small);
+  color: var(--color_grey_dark);
+  font-weight: 400;
+  margin-bottom: var(--gap_medium);
+  padding-top: 0;
+}
+
 .post-header {
   padding-bottom: 0;
   margin-bottom: var(--gap_large);
   width: 100%;
-}
-
-.post-date-top {
-  font-size: var(--font_size_small);
-  color: var(--color_grey_ultra_dark);
-  font-weight: 400;
-  margin-bottom: var(--gap_medium);
 }
 
 .post-title {

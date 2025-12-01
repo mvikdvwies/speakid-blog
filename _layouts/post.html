@@ -14,13 +14,13 @@
     </header>
 
     <article class="post">
+      {% if page.date %}
+      <div class="post-date-top">
+        {{ page.date | date: "%d.%m.%Y" }}
+      </div>
+      {% endif %}
+      
       <header class="post-header">
-        {% if page.date %}
-        <div class="post-date-top">
-          {{ page.date | date: "%d.%m.%Y" }}
-        </div>
-        {% endif %}
-        
         <h1 class="post-title">{{ page.title }}</h1>
       </header>
 
