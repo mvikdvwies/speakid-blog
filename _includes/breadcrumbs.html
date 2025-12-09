@@ -1,0 +1,25 @@
+<nav class="breadcrumbs" aria-label="Хлебные крошки">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="/speakid-blog/">
+        <span itemprop="name">Главная</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+    {% if page.layout == 'post' %}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span aria-label="separator">›</span>
+      <a itemprop="item" href="/speakid-blog/#articles">
+        <span itemprop="name">Статьи</span>
+      </a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span aria-label="separator">›</span>
+      <span itemprop="name">{{ page.title }}</span>
+      <meta itemprop="position" content="3" />
+    </li>
+    {% endif %}
+  </ol>
+</nav>
+

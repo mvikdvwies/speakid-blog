@@ -3,22 +3,58 @@
 
   <url>
     <loc>https://mvikdvwies.github.io/speakid-blog/</loc>
+    <lastmod>2025-12-09</lastmod>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://mvikdvwies.github.io/speakid-blog/posts/first-article.md</loc>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/classroom-phrases-with-tpr-for-kids</loc>
+    <lastmod>2025-12-09</lastmod>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://mvikdvwies.github.io/speakid-blog/posts/lessons-for-kids-online.md</loc>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/common-teachers-mistakes</loc>
+    <lastmod>2025-12-03</lastmod>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://mvikdvwies.github.io/speakid-blog/posts/english-games-online.md</loc>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/speakid-vs-ordinary-lessons</loc>
+    <lastmod>2025-12-03</lastmod>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/utp</loc>
+    <lastmod>2025-12-02</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/first-article</loc>
+    <lastmod>2025-12-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/lessons-for-kids-online</loc>
+    <lastmod>2025-12-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://mvikdvwies.github.io/speakid-blog/posts/english-games-online</loc>
+    <lastmod>2025-12-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
 </urlset>

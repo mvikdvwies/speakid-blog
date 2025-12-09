@@ -6,6 +6,8 @@
 
 ## Последние статьи
 
+- [15 фраз на английском для детского урока + TPR, которые нужно использовать каждый день](posts/classroom-phrases-with-tpr-for-kids)
+
 - [Ошибки учителей, которые теряют студентов (и как их избежать)](posts/common-teachers-mistakes.md)
 
 - [Чем уроки по SPEAKID отличаются от обычных: сравнение и преимущества](posts/speakid-vs-ordinary-lessons.md)
