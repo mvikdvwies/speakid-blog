@@ -1,0 +1,123 @@
+<div id="table-of-contents" class="table-of-contents">
+  <div class="toc-header">
+    <h3 class="toc-title">Оглавление</h3>
+    <button class="toc-toggle" aria-label="Свернуть оглавление">Свернуть</button>
+  </div>
+  <nav class="toc-nav" id="toc-nav">
+    <!-- Оглавление будет сгенерировано JavaScript -->
+  </nav>
+</div>
+
+<script>
+(function() {
+  // Функция для создания уникального ID из текста
+  function createId(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .trim();
+  }
+
+  // Находим контейнер с контентом статьи
+  const postContent = document.querySelector('.post-content');
+  if (!postContent) return;
+
+  // Находим все заголовки h2 и h3
+  const headings = postContent.querySelectorAll('h2, h3');
+  if (headings.length === 0) return;
+
+  // Создаем оглавление
+  const tocNav = document.getElementById('toc-nav');
+  if (!tocNav) return;
+
+  const tocList = document.createElement('ol');
+  tocList.className = 'toc-list';
+
+  headings.forEach((heading, index) => {
+    // Создаем ID для заголовка
+    let id = heading.id || createId(heading.textContent);
+    heading.id = id;
+
+    // Создаем элемент оглавления
+    const tocItem = document.createElement('li');
+    tocItem.className = heading.tagName.toLowerCase() === 'h3' ? 'toc-item toc-item-h3' : 'toc-item toc-item-h2';
+
+    const tocLink = document.createElement('a');
+    tocLink.href = '#' + id;
+    tocLink.textContent = heading.textContent;
+    tocLink.className = 'toc-link';
+
+    // Плавная прокрутка
+    tocLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.getElementById(id);
+      if (target) {
+        const offset = 80; // Отступ от верха
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+        // Обновляем активный элемент
+        updateActiveTocItem(id);
+      }
+    });
+
+    tocItem.appendChild(tocLink);
+    tocList.appendChild(tocItem);
+  });
+
+  tocNav.appendChild(tocList);
+
+  // Функция для обновления активного элемента при прокрутке
+  function updateActiveTocItem(activeId) {
+    const tocLinks = tocNav.querySelectorAll('.toc-link');
+    tocLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + activeId) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  // Отслеживание прокрутки для подсветки активного раздела
+  let ticking = false;
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        const scrollPos = window.scrollY + 100;
+        headings.forEach(heading => {
+          const top = heading.offsetTop;
+          const bottom = top + heading.offsetHeight;
+          if (scrollPos >= top && scrollPos < bottom) {
+            updateActiveTocItem(heading.id);
+          }
+        });
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll);
+  // Инициализация при загрузке
+  onScroll();
+
+  // Переключение видимости оглавления
+  const tocToggle = document.querySelector('.toc-toggle');
+  const tocNavElement = document.getElementById('toc-nav');
+  const tocContainer = document.getElementById('table-of-contents');
+  
+  if (tocToggle && tocNavElement) {
+    tocToggle.addEventListener('click', function() {
+      const isExpanded = tocNavElement.style.display !== 'none';
+      tocNavElement.style.display = isExpanded ? 'none' : 'block';
+      tocToggle.textContent = isExpanded ? 'Развернуть' : 'Свернуть';
+      tocContainer.classList.toggle('collapsed');
+    });
+  }
+})();
+</script>
+

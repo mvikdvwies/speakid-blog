@@ -4,5 +4,11 @@
 {% else %}
   {% assign reading_time = words | divided_by: 180 %}
 {% endif %}
-<span class="reading-time">{{ reading_time }} мин чтения</span>
+<span class="reading-time">
+  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="reading-time-icon">
+    <path d="M8 0C3.58 0 0 3.58 0 8C0 12.42 3.58 16 8 16C12.42 16 16 12.42 16 8C16 3.58 12.42 0 8 0ZM8 14C4.69 14 2 11.31 2 8C2 4.69 4.69 2 8 2C11.31 2 14 4.69 14 8C14 11.31 11.31 14 8 14ZM8.5 4H7V9L11.25 11.15L12 9.92L8.5 8.25V4Z" fill="currentColor"/>
+  </svg>
+  {{ reading_time }} мин
+</span>
+
 
