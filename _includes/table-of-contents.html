@@ -27,8 +27,8 @@
       return;
     }
 
-    // Находим все заголовки h2 и h3
-    const allHeadings = postContent.querySelectorAll('h2, h3');
+    // Находим только заголовки h2
+    const allHeadings = postContent.querySelectorAll('h2');
     if (allHeadings.length === 0) {
       // Скрываем оглавление, если заголовков нет
       const tocContainer = document.getElementById('table-of-contents');
@@ -36,9 +36,8 @@
       return;
     }
 
-    // Ограничиваем количество пунктов оглавления (максимум 7)
-    const maxItems = 7;
-    const headings = Array.from(allHeadings).slice(0, maxItems);
+    // Используем все h2 заголовки
+    const headings = Array.from(allHeadings);
 
     // Создаем оглавление
     const tocNav = document.getElementById('toc-nav');
@@ -54,7 +53,7 @@
 
     // Создаем элемент оглавления
     const tocItem = document.createElement('li');
-    tocItem.className = heading.tagName.toLowerCase() === 'h3' ? 'toc-item toc-item-h3' : 'toc-item toc-item-h2';
+    tocItem.className = 'toc-item toc-item-h2';
 
     const tocLink = document.createElement('a');
     tocLink.href = '#' + id;
