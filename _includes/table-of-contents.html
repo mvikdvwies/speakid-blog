@@ -1,8 +1,5 @@
 <div id="table-of-contents" class="table-of-contents">
-  <div class="toc-header">
-    <h3 class="toc-title">Оглавление</h3>
-    <button class="toc-toggle" aria-label="Свернуть оглавление">Свернуть</button>
-  </div>
+  <h3 class="toc-title">Оглавление</h3>
   <nav class="toc-nav" id="toc-nav">
     <!-- Оглавление будет сгенерировано JavaScript -->
   </nav>
@@ -31,19 +28,23 @@
     }
 
     // Находим все заголовки h2 и h3
-    const headings = postContent.querySelectorAll('h2, h3');
-    if (headings.length === 0) {
+    const allHeadings = postContent.querySelectorAll('h2, h3');
+    if (allHeadings.length === 0) {
       // Скрываем оглавление, если заголовков нет
       const tocContainer = document.getElementById('table-of-contents');
       if (tocContainer) tocContainer.style.display = 'none';
       return;
     }
 
+    // Ограничиваем количество пунктов оглавления (максимум 7)
+    const maxItems = 7;
+    const headings = Array.from(allHeadings).slice(0, maxItems);
+
     // Создаем оглавление
     const tocNav = document.getElementById('toc-nav');
     if (!tocNav) return;
 
-  const tocList = document.createElement('ol');
+  const tocList = document.createElement('ul');
   tocList.className = 'toc-list';
 
   headings.forEach((heading, index) => {
@@ -115,20 +116,6 @@
   window.addEventListener('scroll', onScroll);
   // Инициализация при загрузке
   onScroll();
-
-  // Переключение видимости оглавления
-  const tocToggle = document.querySelector('.toc-toggle');
-  const tocNavElement = document.getElementById('toc-nav');
-  const tocContainer = document.getElementById('table-of-contents');
-  
-  if (tocToggle && tocNavElement) {
-    tocToggle.addEventListener('click', function() {
-      const isExpanded = tocNavElement.style.display !== 'none';
-      tocNavElement.style.display = isExpanded ? 'none' : 'block';
-      tocToggle.textContent = isExpanded ? 'Развернуть' : 'Свернуть';
-      tocContainer.classList.toggle('collapsed');
-    });
-  }
   }
 
   // Запускаем после загрузки DOM
