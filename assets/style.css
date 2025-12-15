@@ -921,7 +921,7 @@ small {
   }
   
   .article-card-content {
-    padding: 16px;
+    padding: 0;
   }
 }
 
@@ -935,7 +935,7 @@ small {
   }
 
   .article-card-content {
-    padding: var(--gap_medium);
+    padding: 0;
   }
 
   .article-card-title {
