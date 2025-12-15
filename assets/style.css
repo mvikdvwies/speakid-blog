@@ -753,6 +753,7 @@ small {
   display: flex;
   flex-direction: column;
   min-height: 0;
+  padding: 0;
 }
 
 .article-card:hover {
@@ -811,6 +812,7 @@ small {
   align-items: center;
   gap: 12px;
   margin-bottom: 12px;
+  padding-top: 10px;
   font-size: 13px;
   flex-wrap: wrap;
 }
