@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     {% include head.html %}
-    <link rel="stylesheet" href="/speakid-blog/assets/style.css">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   </head>
 
   <body>
 
     <header>
-      <a href="/speakid-blog/" class="logo-link">
-        <img src="/speakid-blog/logo2.png" alt="SPEAKID Blog" class="logo">
+      <a href="{{ '/' | relative_url }}" class="logo-link">
+        <img src="{{ '/logo2.png' | relative_url }}" alt="SPEAKID Blog" class="logo">
       </a>
     </header>
 

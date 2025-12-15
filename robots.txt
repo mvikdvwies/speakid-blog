@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mvikdvwies.github.io/speakid-blog/sitemap.xml
-Host: mvikdvwies.github.io
+Sitemap: https://blog.speakid.ru/sitemap.xml
+Host: blog.speakid.ru

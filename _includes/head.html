@@ -3,7 +3,11 @@
 <meta name="msvalidate.01" content="906FBCDC0D6406EA962D075B0CA99893" />
 <meta name="language" content="ru">
 
+{% if page.layout == 'home' or page.title == 'Blog SPEAKID' %}
+<title>{{ page.title | escape }}</title>
+{% else %}
 <title>{{ page.title | escape }} | SPEAKID Blog</title>
+{% endif %}
 
 <!-- Google Fonts: Onest -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

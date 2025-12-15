@@ -3,29 +3,34 @@
   {% assign post_url = post_url | replace: '.md', '' %}
 {% endif %}
 {% if post_url contains 'posts/' %}
-  {% assign post_url = post_url | prepend: '/speakid-blog/' %}
+  {% assign post_url = post_url | prepend: '/' %}
 {% else %}
-  {% assign post_url = post_url | prepend: '/speakid-blog/posts/' %}
+  {% assign post_url = post_url | prepend: '/posts/' %}
 {% endif %}
+{% assign post_url = post_url | relative_url %}
 
 {% comment %} Автоматическое определение обложки {% endcomment %}
 {% assign article_image = include.image %}
 {% unless article_image %}
   {% comment %} Пытаемся найти обложку по имени файла статьи {% endcomment %}
   {% assign filename = include.url | replace: 'posts/', '' | replace: '.md', '' %}
-  {% assign possible_image = '/speakid-blog/images/' | append: filename | append: '.png' %}
-  {% assign article_image = possible_image %}
+  {% assign possible_image = '/images/' | append: filename | append: '.png' %}
+  {% assign article_image = possible_image | relative_url %}
+{% else %}
+  {% unless article_image contains 'http' or article_image contains '//' %}
+    {% assign article_image = article_image | relative_url %}
+  {% endunless %}
 {% endunless %}
 
 <article class="article-card" data-category="{{ include.category }}" data-tags="{{ include.tags | join: ',' }}">
   <a href="{{ post_url }}" class="article-card-link">
     {% if article_image %}
     <div class="article-card-image">
-      <img src="{{ article_image }}" alt="{{ include.title }}" loading="lazy" onerror="this.onerror=null; this.src='/speakid-blog/og-default.png';">
+      <img src="{{ article_image }}" alt="{{ include.title }}" loading="lazy" onerror="this.onerror=null; this.src='{{ '/og-default.png' | relative_url }}';">
     </div>
     {% else %}
     <div class="article-card-image article-card-image-placeholder">
-      <img src="/speakid-blog/og-default.png" alt="{{ include.title }}" loading="lazy">
+      <img src="{{ '/og-default.png' | relative_url }}" alt="{{ include.title }}" loading="lazy">
     </div>
     {% endif %}
     

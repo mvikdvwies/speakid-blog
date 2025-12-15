@@ -812,7 +812,7 @@ small {
 }
 
 .article-card-content {
-  padding: 0;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -934,7 +934,7 @@ small {
   }
   
   .article-card-content {
-    padding: 0;
+    padding: 10px;
   }
 }
 
@@ -948,7 +948,7 @@ small {
   }
 
   .article-card-content {
-    padding: 0;
+    padding: 10px;
   }
 
   .article-card-title {

@@ -1,7 +1,7 @@
 <nav class="breadcrumbs" aria-label="Хлебные крошки">
   <ol itemscope itemtype="https://schema.org/BreadcrumbList">
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a itemprop="item" href="/speakid-blog/">
+      <a itemprop="item" href="{{ '/' | relative_url }}">
         <span itemprop="name">Главная</span>
       </a>
       <meta itemprop="position" content="1" />
@@ -9,7 +9,7 @@
     {% if page.layout == 'post' %}
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
       <span aria-label="separator">›</span>
-      <a itemprop="item" href="/speakid-blog/#articles">
+      <a itemprop="item" href="{{ '/#articles' | relative_url }}">
         <span itemprop="name">Статьи</span>
       </a>
       <meta itemprop="position" content="2" />
