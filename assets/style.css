@@ -265,6 +265,13 @@ img {
   margin: var(--gap_large) 0;
 }
 
+/* Убираем margin у изображений в карточках */
+.article-card-image img,
+.article-card img {
+  margin: 0;
+  border-radius: 0;
+}
+
 /* Code */
 pre, code {
   font-family: Consolas, Monaco, 'Courier New', monospace;
@@ -731,8 +738,9 @@ small {
 .articles-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 24px 20px;
   margin-bottom: var(--padding_large);
+  align-items: start;
 }
 
 /* Article Card */
@@ -744,7 +752,7 @@ small {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 0;
 }
 
 .article-card:hover {
@@ -774,6 +782,8 @@ small {
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  display: block;
 }
 
 .article-card:hover .article-card-image img {
@@ -869,7 +879,7 @@ small {
 @media (max-width: 1180px) {
   .articles-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 24px 20px;
   }
 }
 
@@ -888,7 +898,7 @@ small {
 
   .articles-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 20px;
   }
 
   .category-filter {
