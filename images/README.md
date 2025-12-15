@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 # Обложки статей
 
 ## Как добавить обложку для статьи
@@ -17,14 +21,14 @@
 
 В файле `index.md` добавьте параметр `image`:
 
-```markdown
-{% include article-card.html 
-  url="posts/article.md"
-  title="..."
-  image="/speakid-blog/images/custom-cover.png"
+````markdown
+{% raw %}{% include article-card.html 
+  url='posts/article.md'
+  title='...'
+  image='/speakid-blog/images/custom-cover.png'
   ...
-%}
-```
+%}{% endraw %}
+````
 
 ## Требования к обложкам
 
