@@ -1,0 +1,61 @@
+{% assign post_url = include.url %}
+{% if post_url contains '.md' %}
+  {% assign post_url = post_url | replace: '.md', '' %}
+{% endif %}
+{% if post_url contains 'posts/' %}
+  {% assign post_url = post_url | prepend: '/speakid-blog/' %}
+{% else %}
+  {% assign post_url = post_url | prepend: '/speakid-blog/posts/' %}
+{% endif %}
+
+{% comment %} Автоматическое определение обложки {% endcomment %}
+{% assign article_image = include.image %}
+{% unless article_image %}
+  {% comment %} Пытаемся найти обложку по имени файла статьи {% endcomment %}
+  {% assign filename = include.url | replace: 'posts/', '' | replace: '.md', '' %}
+  {% assign possible_image = '/speakid-blog/images/' | append: filename | append: '.png' %}
+  {% assign article_image = possible_image %}
+{% endunless %}
+
+<article class="article-card" data-category="{{ include.category }}" data-tags="{{ include.tags | join: ',' }}">
+  <a href="{{ post_url }}" class="article-card-link">
+    {% if article_image %}
+    <div class="article-card-image">
+      <img src="{{ article_image }}" alt="{{ include.title }}" loading="lazy" onerror="this.onerror=null; this.src='/speakid-blog/og-default.png';">
+    </div>
+    {% else %}
+    <div class="article-card-image article-card-image-placeholder">
+      <img src="/speakid-blog/og-default.png" alt="{{ include.title }}" loading="lazy">
+    </div>
+    {% endif %}
+    
+    <div class="article-card-content">
+      <div class="article-card-meta">
+        {% if include.category %}
+        <span class="article-card-category">{{ include.category }}</span>
+        {% endif %}
+        {% if include.date %}
+        <span class="article-card-date">{{ include.date | date: "%d.%m.%Y" }}</span>
+        {% endif %}
+      </div>
+      
+      <h2 class="article-card-title">{{ include.title }}</h2>
+      
+      {% if include.description %}
+      <p class="article-card-description">{{ include.description }}</p>
+      {% endif %}
+      
+      {% if include.reading_time %}
+      <div class="article-card-footer">
+        <span class="article-card-reading-time">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="reading-time-icon">
+            <path d="M8 0C3.58 0 0 3.58 0 8C0 12.42 3.58 16 8 16C12.42 16 16 12.42 16 8C16 3.58 12.42 0 8 0ZM8 14C4.69 14 2 11.31 2 8C2 4.69 4.69 2 8 2C11.31 2 14 4.69 14 8C14 11.31 11.31 14 8 14ZM8.5 4H7V9L11.25 11.15L12 9.92L8.5 8.25V4Z" fill="currentColor"/>
+          </svg>
+          {{ include.reading_time }} мин
+        </span>
+      </div>
+      {% endif %}
+    </div>
+  </a>
+</article>
+

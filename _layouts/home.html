@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="/speakid-blog/assets/style.css">
+  </head>
+
+  <body class="home-body">
+
+    <main class="home-page">
+      <header>
+        <a href="/speakid-blog/" class="logo-link">
+          <img src="/speakid-blog/logo2.png" alt="SPEAKID Blog" class="logo">
+        </a>
+      </header>
+      <section class="hero-section">
+        <h1 class="hero-title">Блог SPEAKID</h1>
+        <p class="hero-subtitle">Статьи для учителей английского детям 4–12 лет:<br>методика, игры, доход и онлайн-работа</p>
+      </section>
+
+      <nav class="category-filter" id="category-filter">
+        <button class="filter-btn active" data-category="all">Все</button>
+        <button class="filter-btn" data-category="методика">Методика</button>
+        <button class="filter-btn" data-category="игры">Игры</button>
+        <button class="filter-btn" data-category="доход">Доход</button>
+        <button class="filter-btn" data-category="онлайн">Онлайн-работа</button>
+      </nav>
+
+      <section class="articles-grid" id="articles-grid">
+        {{ content }}
+      </section>
+    </main>
+
+    <script src="/speakid-blog/assets/home-filter.js"></script>
+  </body>
+</html>
+
