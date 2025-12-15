@@ -251,9 +251,20 @@ article {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Исключаем карточки статей из общего стиля article */
+article.article-card {
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
 @media (max-width: 768px) {
   article {
     padding: var(--padding_small);
+  }
+  
+  article.article-card {
+    padding: 0;
   }
 }
 
