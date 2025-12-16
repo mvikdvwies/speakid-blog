@@ -60,14 +60,14 @@ description: "Статьи для учителей английского 4–12
 %}
 
 {% include article-card.html 
-  url='posts/first-article.md'
+  url='posts/first-article-new.md'
   title='Как учителю английского быстро повысить доход: 5 простых шагов'
   description='Пошаговый план, как учителю английского увеличить доход в 2025 году: методика, игры, позиционирование.'
   date='2025-12-01'
   category='Доход'
   tags='учитель английского,онлайн обучение,доход учителя,методика SPEAKID'
   reading_time='4'
-  image='/images/first-article.PNG'
+  image='/images/first-article-new.png'
 %}
 
 {% include article-card.html 

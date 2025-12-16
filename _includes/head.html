@@ -29,7 +29,7 @@
 {% unless og_image %}
   {% if page.layout == 'post' %}
     {% assign filename = page.url | replace: '/posts/', '' | replace: '/', '' | replace: '.html', '' | replace: '.md', '' %}
-    {% assign possible_image = '/images/' | append: filename | append: '.PNG' %}
+    {% assign possible_image = '/images/' | append: filename | append: '.png' %}
     {% assign og_image = possible_image %}
   {% endif %}
 {% endunless %}

@@ -21,7 +21,7 @@ image: "/images/english-games-online.PNG"
 
 ---
 
-## 1. What's Missing
+## What's Missing
 Одна из самых популярных игр для тренировки слов.
 
 **Как играть:**  
@@ -35,7 +35,7 @@ image: "/images/english-games-online.PNG"
 
 ---
 
-## 2. Magic Sentence  
+## Magic Sentence  
 Игра, где ребенок собирает правильные предложения из перемешанных слов.
 
 **Что тренирует:**  
@@ -48,7 +48,7 @@ image: "/images/english-games-online.PNG"
 
 ---
 
-## 3. Hangman (Виселица)
+## Hangman (Виселица)
 
 Классическая игра, которая отлично развивает знание букв и слов.
 
@@ -62,7 +62,7 @@ image: "/images/english-games-online.PNG"
 
 ---
 
-## 4. Flash Drill  
+## Flash Drill  
 Мгновенные карточки: показываем картинку на 1–2 секунды — ученик должен сказать слово.
 
 **Тренирует:**  
@@ -73,7 +73,7 @@ image: "/images/english-games-online.PNG"
 
 ---
 
-## 5. Find It!  
+## Find It!  
 На слайде куча объектов — ребёнок должен найти и назвать нужный.
 
 **Тренирует:**  
@@ -83,7 +83,7 @@ image: "/images/english-games-online.PNG"
 
 ---
 
-## 6. Quick Actions  
+## Quick Actions  
 Учитель быстро говорит команды: jump, clap, touch your head, spin.
 
 **Тренирует:**  
@@ -91,7 +91,7 @@ image: "/images/english-games-online.PNG"
 
 ---
 
-## 7. Mini Quiz  
+## Mini Quiz  
 Короткие викторины, где ребёнок выбирает правильный ответ.
 
 **Тренирует:**  
@@ -107,8 +107,6 @@ image: "/images/english-games-online.PNG"
 4. Хвалите за конкретные успехи (а не «молодец»)
 
 ---
-
-## Итоги
 
 Игры — это фундамент эффективных уроков английского с детьми.  
 Если урок динамичный, с чередованием активностей, ребёнок учится быстрее, а родители охотнее покупают занятия.
