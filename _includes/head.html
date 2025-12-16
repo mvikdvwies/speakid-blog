@@ -24,9 +24,22 @@
 
 <link rel="icon" type="image/png" href="{{ '/logo.png' | relative_url }}">
 
+{% comment %} Автоматическое определение обложки статьи {% endcomment %}
+{% assign og_image = page.image %}
+{% unless og_image %}
+  {% if page.layout == 'post' %}
+    {% assign filename = page.url | replace: '/posts/', '' | replace: '/', '' | replace: '.html', '' | replace: '.md', '' %}
+    {% assign possible_image = '/images/' | append: filename | append: '.PNG' %}
+    {% assign og_image = possible_image %}
+  {% endif %}
+{% endunless %}
+{% unless og_image %}
+  {% assign og_image = '/og-default.png' %}
+{% endunless %}
+
 <meta property="og:title" content="{{ page.title | escape }}">
 <meta property="og:description" content="{{ page.description | escape }}">
-<meta property="og:image" content="{{ '/og-default.png' | absolute_url }}">
+<meta property="og:image" content="{{ og_image | absolute_url }}">
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ page.url | absolute_url }}"/>
 <meta property="og:site_name" content="SPEAKID Blog">
@@ -45,7 +58,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title | escape }}">
 <meta name="twitter:description" content="{{ page.description | escape }}">
-<meta name="twitter:image" content="{{ '/og-default.png' | absolute_url }}">
+<meta name="twitter:image" content="{{ og_image | absolute_url }}">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -75,6 +88,6 @@
     "@type": "WebPage",
     "@id": "{{ page.url | absolute_url }}"
   },
-  "image": "{{ '/og-default.png' | absolute_url }}"{% endif %}
+  "image": "{{ og_image | absolute_url }}"{% endif %}
 }
 </script>

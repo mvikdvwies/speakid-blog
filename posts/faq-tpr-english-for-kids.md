@@ -5,6 +5,7 @@ description: "Разбираем, как правильно использова
 author: "SPEAKID"
 date: 2025-12-14
 tags: ["TPR", "английский детям", "методика", "детские уроки", "онлайн обучение", "SPEAKID"]
+image: "/images/faq-tpr-english-for-kids.PNG"
 ---
 
 ## Что такое TPR простыми словами?

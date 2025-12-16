@@ -5,6 +5,7 @@ description: "Простые английские фразы и TPR-жесты, 
 author: "SPEAKID"
 date: 2025-12-09
 tags: ["английский детям", "онлайн обучение", "фразы для урока", "TPR", "SPEAKID", "дети 4-12"]
+image: "/images/classroom-phrases-with-tpr-for-kids.PNG"
 ---
 
 ## Почему эти фразы так важны

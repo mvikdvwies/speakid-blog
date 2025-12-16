@@ -12,6 +12,7 @@ description: "Статьи для учителей английского 4–12
   category='Методика'
   tags='TPR,английский детям,методика,детские уроки,онлайн обучение,SPEAKID'
   reading_time='5'
+  image='/images/faq-tpr-english-for-kids.PNG'
 %}
 
 {% include article-card.html 
@@ -22,6 +23,7 @@ description: "Статьи для учителей английского 4–12
   category='Методика'
   tags='английский детям,онлайн обучение,фразы для урока,TPR,SPEAKID,дети 4-12'
   reading_time='4'
+  image='/images/classroom-phrases-with-tpr-for-kids.PNG'
 %}
 
 {% include article-card.html 
@@ -32,6 +34,7 @@ description: "Статьи для учителей английского 4–12
   category='Методика'
   tags='английский детям,ошибки учителей,методика,онлайн обучение,SPEAKID,дети 4-12'
   reading_time='4'
+  image='/images/common-teachers-mistakes.PNG'
 %}
 
 {% include article-card.html 
@@ -42,6 +45,7 @@ description: "Статьи для учителей английского 4–12
   category='Методика'
   tags='английский детям,SPEAKID,онлайн обучение,уроки английского,дети 4-12,УТП учителя'
   reading_time='5'
+  image='/images/speakid-vs-ordinary-lessons.PNG'
 %}
 
 {% include article-card.html 
@@ -52,6 +56,7 @@ description: "Статьи для учителей английского 4–12
   category='Доход'
   tags='УТП учителя,английский детям,доход учителя,методика SPEAKID,онлайн обучение'
   reading_time='6'
+  image='/images/utp.PNG'
 %}
 
 {% include article-card.html 
@@ -62,6 +67,7 @@ description: "Статьи для учителей английского 4–12
   category='Доход'
   tags='учитель английского,онлайн обучение,доход учителя,методика SPEAKID'
   reading_time='4'
+  image='/images/first-article.PNG'
 %}
 
 {% include article-card.html 
@@ -72,6 +78,7 @@ description: "Статьи для учителей английского 4–12
   category='Онлайн-работа'
   tags='уроки английского детям,онлайн обучение,методика SPEAKID,дети 4–12'
   reading_time='5'
+  image='/images/lessons-for-kids-online.PNG'
 %}
 
 {% include article-card.html 
@@ -82,4 +89,5 @@ description: "Статьи для учителей английского 4–12
   category='Игры'
   tags='игры для уроков,онлайн английский,методика игр,учителя 4–12'
   reading_time='4'
+  image='/images/english-games-online.PNG'
 %}
