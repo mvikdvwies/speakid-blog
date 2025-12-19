@@ -55,7 +55,7 @@ image: "/images/why-emotions-matter-in-lessons-emotional-attachment.png"
 Именно эти эмоции и становятся якорем для памяти.
 
 <div style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; color: white;">
-  <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=400&fit=crop" alt="Эмоции детей" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800&h=400&fit=crop" alt="Дети с эмоциями" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
   <p style="margin: 0; font-size: 16px; line-height: 1.6; text-align: center; font-weight: 500;">Удивление, смех, азарт, радость — эти эмоции активируют миндалевидное тело мозга и помогают информации закрепиться в долговременной памяти.</p>
 </div>
 
