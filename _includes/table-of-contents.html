@@ -1,5 +1,5 @@
-<div id="table-of-contents" class="table-of-contents">
-  <h3 class="toc-title">Оглавление</h3>
+<div id="table-of-contents" class="article-toc">
+  <strong>В этой статье:</strong>
   <nav class="toc-nav" id="toc-nav">
     <!-- Оглавление будет сгенерировано JavaScript -->
   </nav>
@@ -23,7 +23,10 @@
     if (!postContent) {
       // Скрываем оглавление, если контента нет
       const tocContainer = document.getElementById('table-of-contents');
-      if (tocContainer) tocContainer.style.display = 'none';
+      if (tocContainer) {
+        tocContainer.style.display = 'none';
+        return;
+      }
       return;
     }
 
@@ -32,8 +35,10 @@
     if (allHeadings.length === 0) {
       // Скрываем оглавление, если заголовков нет
       const tocContainer = document.getElementById('table-of-contents');
-      if (tocContainer) tocContainer.style.display = 'none';
-      return;
+      if (tocContainer) {
+        tocContainer.style.display = 'none';
+        return;
+      }
     }
 
     // Используем все h2 заголовки

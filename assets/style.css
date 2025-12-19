@@ -476,82 +476,91 @@ small {
 }
 
 /* Table of Contents */
-.table-of-contents {
-  background: var(--color_grey_ultra_light);
-  border-radius: var(--radius_medium);
-  padding: var(--gap_large);
-  margin-bottom: var(--gap_large);
-  border: 1px solid var(--color_grey_light);
+/* Дзеновское оглавление */
+.article-toc {
+  margin: 2.5rem 0;
+  padding: 1.25rem 1.5rem;
+  background: #f7f7f8;
+  border-radius: 16px;
 }
 
-.toc-title {
-  font-size: var(--font_size_medium);
+.article-toc strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  color: var(--color_black);
-  margin: 0 0 var(--gap_medium) 0;
-  padding: 0;
+  color: #555;
 }
 
-.toc-nav {
+.article-toc .toc-nav {
   display: block;
 }
 
-.toc-list {
+.article-toc .toc-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  counter-reset: toc-counter;
-}
-
-.toc-item {
-  margin-bottom: var(--gap_small);
   padding-left: 0;
+  margin: 0;
+}
+
+.article-toc .toc-item {
+  margin: 0.4rem 0;
+  line-height: 1.4;
   position: relative;
+  padding-left: 1rem;
 }
 
-.toc-item-h2 {
-  font-weight: 500;
-  margin-left: 0;
+.article-toc .toc-item::before {
+  content: "—";
+  margin-right: 0.5rem;
+  color: #aaa;
+  position: absolute;
+  left: 0;
 }
 
-.toc-item-h3 {
+.article-toc .toc-item-h2 {
   font-weight: 400;
-  margin-left: var(--gap_medium);
-  font-size: var(--font_size_small);
 }
 
-.toc-link {
-  color: var(--color_grey_ultra_dark);
+.article-toc .toc-item-h3 {
+  font-weight: 400;
+  margin-left: 0;
+  font-size: 0.9rem;
+}
+
+.article-toc .toc-link {
   text-decoration: none;
-  border-bottom: none;
-  display: block;
-  padding: 4px 0;
-  transition: opacity 0.2s ease;
-  line-height: 1.5;
+  color: #111;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  transition: border-bottom-color 0.2s ease;
 }
 
-.toc-link:hover {
-  opacity: 0.7;
-  border-bottom: none;
+.article-toc .toc-link:hover {
+  border-bottom-color: rgba(0,0,0,0.3);
 }
 
-.toc-link.active {
-  color: var(--color_grey_ultra_dark);
+.article-toc .toc-link.active {
+  color: #111;
   font-weight: 500;
-  opacity: 1;
+  border-bottom-color: rgba(0,0,0,0.2);
+}
+
+/* Совместимость со старым классом */
+.table-of-contents {
+  margin: 2.5rem 0;
+  padding: 1.25rem 1.5rem;
+  background: #f7f7f8;
+  border-radius: 16px;
 }
 
 @media (max-width: 768px) {
+  .article-toc,
   .table-of-contents {
-    padding: var(--gap_medium);
+    padding: 1rem 1.25rem;
+    margin: 2rem 0;
   }
 
-  .toc-title {
-    font-size: var(--font_size_default);
-  }
-
-  .toc-item-h3 {
-    margin-left: var(--gap_small);
+  .article-toc strong {
+    font-size: 0.9rem;
   }
 }
 
