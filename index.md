@@ -5,6 +5,17 @@ description: "Статьи для учителей английского 4–12
 ---
 
 {% include article-card.html 
+  url='posts/why-emotions-matter-in-lessons-emotional-attachment.md'
+  title='Почему эмоции важнее правил: как создать эмоциональную привязку на уроке английского'
+  description='Разбираем, почему эмоциональная вовлечённость важнее идеального порядка на уроке, и как создать условия, при которых дети запоминают язык через переживания, а не зубрёжку.'
+  date='2025-12-15'
+  category='Методика'
+  tags='английский детям,методика,эмоциональное обучение,вовлечение,онлайн обучение,SPEAKID'
+  reading_time='5'
+  image='/images/why-emotions-matter-in-lessons-emotional-attachment.png'
+%}
+
+{% include article-card.html 
   url='posts/faq-tpr-english-for-kids.md'
   title='FAQ: Частые вопросы про фразы и TPR на детских уроках английского'
   description='Разбираем, как правильно использовать TPR и фразы на уроках английского для детей 3–12 лет: зачем он нужен, какие команды работают лучше всего и каких ошибок стоит избегать.'
