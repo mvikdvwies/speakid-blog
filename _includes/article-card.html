@@ -9,6 +9,25 @@
 {% endif %}
 {% assign post_url = post_url | relative_url %}
 
+{% comment %} Автоматическое вычисление времени чтения {% endcomment %}
+{% assign calculated_reading_time = null %}
+{% assign post_filename = include.url | replace: 'posts/', '' | replace: '.md', '' %}
+{% for post in site.posts %}
+  {% assign post_url_match = post.url | replace: '/posts/', '' | replace: '/', '' | replace: '.html', '' %}
+  {% if post_url_match == post_filename %}
+    {% assign words = post.content | number_of_words %}
+    {% if words < 360 %}
+      {% assign calculated_reading_time = 1 %}
+    {% else %}
+      {% assign calculated_reading_time = words | divided_by: 180 %}
+    {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% unless calculated_reading_time %}
+  {% assign calculated_reading_time = include.reading_time %}
+{% endunless %}
+
 {% comment %} Автоматическое определение обложки {% endcomment %}
 {% assign article_image = include.image %}
 {% unless article_image %}
@@ -50,13 +69,13 @@
       <p class="article-card-description">{{ include.description }}</p>
       {% endif %}
       
-      {% if include.reading_time %}
+      {% if calculated_reading_time %}
       <div class="article-card-footer">
         <span class="article-card-reading-time">
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="reading-time-icon">
             <path d="M8 0C3.58 0 0 3.58 0 8C0 12.42 3.58 16 8 16C12.42 16 16 12.42 16 8C16 3.58 12.42 0 8 0ZM8 14C4.69 14 2 11.31 2 8C2 4.69 4.69 2 8 2C11.31 2 14 4.69 14 8C14 11.31 11.31 14 8 14ZM8.5 4H7V9L11.25 11.15L12 9.92L8.5 8.25V4Z" fill="currentColor"/>
           </svg>
-          {{ include.reading_time }} мин
+          {{ calculated_reading_time }} мин
         </span>
       </div>
       {% endif %}
