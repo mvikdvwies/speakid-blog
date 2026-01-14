@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     {% include head.html %}
-    <link rel="stylesheet" href="/blog/assets/style.css">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   </head>
 
   <body class="home-body">
@@ -31,7 +31,7 @@
       </section>
     </main>
 
-    <script src="/blog/assets/home-filter.js"></script>
+    <script src="{{ '/assets/home-filter.js' | relative_url }}"></script>
   </body>
 </html>
 
