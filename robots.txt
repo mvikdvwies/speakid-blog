@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blog.speakid.ru/sitemap.xml
-Host: blog.speakid.ru
+Sitemap: https://speakid.ru/blog/sitemap.xml
+Host: speakid.ru
