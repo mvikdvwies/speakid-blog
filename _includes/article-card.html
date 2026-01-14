@@ -45,11 +45,11 @@
   <a href="{{ post_url }}" class="article-card-link">
     {% if article_image %}
     <div class="article-card-image">
-      <img src="{{ article_image }}" alt="{{ include.title }}" loading="lazy" onerror="this.onerror=null; var base=window.location.pathname.match(/^\/blog/)?'/blog':'/'; this.src=base+'og-default.png';">
+      <img src="{{ article_image }}" alt="{{ include.title }}" loading="lazy" onerror="this.onerror=null; this.src='/blog/og-default.png';">
     </div>
     {% else %}
     <div class="article-card-image article-card-image-placeholder">
-      <img src="{{ '/og-default.png' | relative_url }}" alt="{{ include.title }}" loading="lazy">
+      <img src="/blog/og-default.png" alt="{{ include.title }}" loading="lazy">
     </div>
     {% endif %}
     
