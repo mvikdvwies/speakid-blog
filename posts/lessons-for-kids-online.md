@@ -100,6 +100,8 @@ image: "/images/lessons-for-kids-online.PNG"
 
 ### Читайте также:
 
-- [Как вести уроки английского с детьми онлайн](../posts/lessons-for-kids-online.md)
-- [Лучшие игры для онлайн-уроков английского](../posts/english-games-online.md)
+- [Лучшие игры для онлайн-уроков английского: подборка SPEAKID](/blog/posts/english-games-online/) — больше игр для смены активностей на уроке.
+- [15 фраз на английском для детского урока + TPR](/blog/posts/classroom-phrases-with-tpr-for-kids/) — готовые фразы и жесты, которые удерживают внимание.
+- [Ошибки учителей, которые теряют студентов](/blog/posts/common-teachers-mistakes/) — чего избегать на уроках с детьми.
+- [FAQ: фразы и TPR на детских уроках английского](/blog/posts/faq-tpr-english-for-kids/) — ответы на частые вопросы по методике.
 

@@ -158,6 +158,6 @@ image: "/images/common-teachers-mistakes.PNG"
 
 ### Читайте также
 
-- [Почему эмоции важнее правил: как создать эмоциональную привязку на уроке английского](../posts/why-emotions-matter-in-lessons-emotional-attachment.md)
-- [Чем уроки по SPEAKID отличаются от обычных](../posts/speakid-vs-ordinary-lessons.md)  
-- [Игры, которые превращают урок в шоу](../posts/english-games-online.md)
+- [Почему эмоции важнее правил: как создать эмоциональную привязку на уроке английского](/blog/posts/why-emotions-matter-in-lessons-emotional-attachment/)
+- [Чем уроки по SPEAKID отличаются от обычных](/blog/posts/speakid-vs-ordinary-lessons/)
+- [Игры, которые превращают урок в шоу](/blog/posts/english-games-online/)

@@ -117,7 +117,7 @@ image: "/images/english-games-online.PNG"
 
 ### Читайте также:
 
-- [Почему эмоции важнее правил: как создать эмоциональную привязку на уроке английского](../posts/why-emotions-matter-in-lessons-emotional-attachment.md)
-- [Как учителю английского быстро повысить доход](../posts/first-article-new.md)
-- [Как вести уроки английского с детьми онлайн](../posts/lessons-for-kids-online.md)
+- [Почему эмоции важнее правил: как создать эмоциональную привязку на уроке английского](/blog/posts/why-emotions-matter-in-lessons-emotional-attachment/)
+- [Как учителю английского быстро повысить доход](/blog/posts/first-article-new/)
+- [Как вести уроки английского с детьми онлайн](/blog/posts/lessons-for-kids-online/)
 

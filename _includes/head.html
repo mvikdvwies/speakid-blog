@@ -69,6 +69,7 @@
   "@context": "https://schema.org",
   "@type": "{% if page.layout == 'post' %}BlogPosting{% else %}Blog{% endif %}",
   "headline": "{{ page.title | escape }}",
+  {% if page.layout != 'post' %}"url": "{{ page.url | absolute_url }}",{% endif %}
   {% if page.description %}"description": "{{ page.description | escape }}",{% endif %}
   {% if page.date %}"datePublished": "{{ page.date | date: '%Y-%m-%d' }}",{% endif %}
   {% if page.author %}"author": {

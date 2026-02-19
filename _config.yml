@@ -3,3 +3,6 @@ title: "SPEAKID Blog"
 description: "Статьи для учителей английского 4–12 лет: методика, игры, повышение дохода."
 baseurl: "/blog"
 url: "https://speakid.ru"
+
+# URL постов совпадают с sitemap: /blog/posts/:title/
+permalink: /posts/:title/

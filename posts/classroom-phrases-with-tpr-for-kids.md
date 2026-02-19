@@ -175,6 +175,6 @@ TPR не просто оживляет урок.
 
 ### Читайте также
 
-- [Почему эмоции важнее правил: как создать эмоциональную привязку на уроке английского](../posts/why-emotions-matter-in-lessons-emotional-attachment.md)
-- [Ошибки учителей, которые теряют студентов (и как их избежать)](../posts/common-teachers-mistakes.md)  
-- [Игры, которые превращают урок в шоу](../posts/english-games-online.md)
+- [Почему эмоции важнее правил: как создать эмоциональную привязку на уроке английского](/blog/posts/why-emotions-matter-in-lessons-emotional-attachment/)
+- [Ошибки учителей, которые теряют студентов (и как их избежать)](/blog/posts/common-teachers-mistakes/)
+- [Игры, которые превращают урок в шоу](/blog/posts/english-games-online/)

@@ -126,7 +126,7 @@ image: "/images/how-to-find-students-online.png"
 Отвечайте на заявки максимально быстро (в течение часа). Будьте готовы к краткому бесплатному вводному собеседованию (15–20 минут), чтобы познакомиться и обсудить цели.
 
 <div style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white;">
-  <img src="https://unsplash.com/photos/V5Xj7X2PIJw/download?w=800&h=400&fit=crop" alt="Онлайн-обучение" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <img src="https://unsplash.com/photos/V5Xj7X2PIJw/download?w=800&h=400&fit=crop" alt="Репетитор английского и поиск учеников онлайн: платформы и профиль для первых заявок" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
   <p style="margin: 0; font-size: 16px; line-height: 1.6; text-align: center; font-weight: 500;">Онлайн-платформы — это самый быстрый способ получить первые заявки. Главное — полнота профиля и оперативность в ответах.</p>
 </div>
 
@@ -243,7 +243,7 @@ image: "/images/how-to-find-students-online.png"
 - **Гибкость:** будьте готовы подстраиваться под темп ученика, менять материалы, если что-то не идёт
 
 <div style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; color: white;">
-  <img src="https://unsplash.com/photos/-BZqk9phqkw/download?w=800&h=400&fit=crop" alt="Профессионализм" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <img src="https://unsplash.com/photos/-BZqk9phqkw/download?w=800&h=400&fit=crop" alt="Профессионализм репетитора английского: пунктуальность, подготовка к уроку и доверие учеников" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
   <p style="margin: 0; font-size: 16px; line-height: 1.6; text-align: center; font-weight: 500;">Профессионализм — это не только пунктуальность и подготовка. Это уверенность, которая передаётся ученикам и создаёт доверие.</p>
 </div>
 
@@ -283,6 +283,6 @@ image: "/images/how-to-find-students-online.png"
 
 ### Читайте также:
 
-- [Как создать своё УТП для учителя английского и перестать «быть как все»](../posts/utp.md)
-- [Как учителю английского быстро повысить доход: 5 простых шагов](../posts/first-article-new.md)
-- [Ошибки учителей, которые теряют студентов (и как их избежать)](../posts/common-teachers-mistakes.md)
+- [Как создать своё УТП для учителя английского и перестать «быть как все»](/blog/posts/utp/)
+- [Как учителю английского быстро повысить доход: 5 простых шагов](/blog/posts/first-article-new/)
+- [Ошибки учителей, которые теряют студентов (и как их избежать)](/blog/posts/common-teachers-mistakes/)

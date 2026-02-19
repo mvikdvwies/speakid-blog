@@ -30,7 +30,7 @@ image: "/images/why-emotions-matter-in-lessons-emotional-attachment.png"
 «Он ходит, но как будто не продвигается».
 
 <div style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white;">
-  <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=400&fit=crop" alt="Дети на уроке" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=400&fit=crop" alt="Дети на уроке английского: почему эмоциональная вовлечённость важнее идеального порядка" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
   <p style="margin: 0; font-size: 16px; line-height: 1.6; text-align: center; font-weight: 500;">Когда урок превращается в фон, даже внешне активный ребёнок перестаёт усваивать информацию. Эмоциональная вовлечённость — это не опция, а необходимость.</p>
 </div>
 
@@ -55,7 +55,7 @@ image: "/images/why-emotions-matter-in-lessons-emotional-attachment.png"
 Именно эти эмоции и становятся якорем для памяти.
 
 <div style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; color: white;">
-  <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800&h=400&fit=crop" alt="Дети с эмоциями" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800&h=400&fit=crop" alt="Эмоциональная привязка на уроке английского: удивление, смех и азарт помогают запоминать слова" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
   <p style="margin: 0; font-size: 16px; line-height: 1.6; text-align: center; font-weight: 500;">Удивление, смех, азарт, радость — эти эмоции активируют миндалевидное тело мозга и помогают информации закрепиться в долговременной памяти.</p>
 </div>
 
@@ -119,7 +119,7 @@ This is Leo. He is a dog. He is scared of cats.
 А это чувство хочется повторять снова и снова. Именно поэтому важно создавать ситуации, где ребёнок может почувствовать успех регулярно, а не ждать какого-то далёкого результата в будущем. Маленькие победы создают эмоциональную привязку к процессу обучения, делая его приятным и желанным.
 
 <div style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; color: white;">
-  <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=400&fit=crop" alt="Дети радуются успеху" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=400&fit=crop" alt="Маленькие победы на уроке английского: как радость от успеха создаёт мотивацию у детей" style="width: 100%; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
   <p style="margin: 0; font-size: 16px; line-height: 1.6; text-align: center; font-weight: 500;">Каждая маленькая победа — это шаг к большой цели. Регулярные успехи создают мотивацию и делают обучение желанным процессом, а не обязательством.</p>
 </div>
 
@@ -136,6 +136,6 @@ This is Leo. He is a dog. He is scared of cats.
 
 ### Читайте также:
 
-- [15 фраз на английском для детского урока + TPR, которые нужно использовать каждый день](../posts/classroom-phrases-with-tpr-for-kids.md)
-- [Ошибки учителей, которые теряют студентов (и как их избежать)](../posts/common-teachers-mistakes.md)
-- [Лучшие игры для онлайн-уроков английского: подборка SPEAKID](../posts/english-games-online.md)
+- [15 фраз на английском для детского урока + TPR, которые нужно использовать каждый день](/blog/posts/classroom-phrases-with-tpr-for-kids/)
+- [Ошибки учителей, которые теряют студентов (и как их избежать)](/blog/posts/common-teachers-mistakes/)
+- [Лучшие игры для онлайн-уроков английского: подборка SPEAKID](/blog/posts/english-games-online/)

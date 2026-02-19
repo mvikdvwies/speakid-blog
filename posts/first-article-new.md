@@ -102,6 +102,6 @@ image: "/images/first-article-new.png"
 
 ### Читайте также:
 
-- [Как вести уроки английского с детьми онлайн](../posts/lessons-for-kids-online.md)
-- [Лучшие игры для онлайн-уроков английского](../posts/english-games-online.md)
+- [Как вести уроки английского с детьми онлайн](/blog/posts/lessons-for-kids-online/)
+- [Лучшие игры для онлайн-уроков английского](/blog/posts/english-games-online/)
 
