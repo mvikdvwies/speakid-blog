@@ -5,6 +5,17 @@ description: "Статьи для учителей английского 4–12
 ---
 
 {% include article-card.html 
+  url='posts/how-to-build-schedule-without-burnout.md'
+  title='Как сформировать расписание, чтобы не выгореть: гайд для онлайн-преподавателей'
+  description='7 принципов здорового расписания: блоки уроков, буферы, админ-день и пример недели на 20–25 teaching-часов без выгорания к пятнице.'
+  date='2026-05-19'
+  category='Онлайн-работа'
+  tags='расписание,выгорание,онлайн обучение,репетитор английского,организация работы'
+  reading_time='11'
+  image='/images/schedule-without-burnout.png'
+%}
+
+{% include article-card.html 
   url='posts/how-to-find-students-online.md'
   title='Как репетитору английского найти учеников: от фриланса до устойчивой практики'
   description='Практическое руководство по поиску учеников для репетиторов английского: от определения ниши до построения стабильного потока клиентов.'
@@ -24,6 +35,17 @@ description: "Статьи для учителей английского 4–12
   tags='доход учителя,цена урока,репетитор английского,повышение дохода,онлайн обучение,работа с родителями'
   reading_time='7'
   image='/images/price-increase-guide.png'
+%}
+
+{% include article-card.html 
+  url='posts/five-ideas-for-warmup-stage.md'
+  title='5 способов разогреть онлайн-урок английского (чтобы дети не молчали в первые 5 минут)'
+  description='Пять рабочих warm-up для онлайн-урока с детьми: TPR, визуальные игры, выбор, эмодзи и задания «принеси предмет». С разбивкой по возрастам.'
+  date='2026-05-19'
+  category='Методика'
+  tags='warm-up,онлайн обучение,TPR,уроки английского детям,методика,дети 4-12'
+  reading_time='6'
+  image='/images/five-ideas-for-warmup-stage.png'
 %}
 
 {% include article-card.html 
