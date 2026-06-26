@@ -158,6 +158,7 @@ image: "/images/common-teachers-mistakes.PNG"
 
 ### Читайте также
 
+- [7 сигналов, что ученик скоро уйдёт](/blog/posts/seven-signs-student-will-quit/) — ранние маркеры ухода и разговор с родителем до «паузы».
 - [Почему эмоции важнее правил: как создать эмоциональную привязку на уроке английского](/blog/posts/why-emotions-matter-in-lessons-emotional-attachment/)
 - [Чем уроки по SPEAKID отличаются от обычных](/blog/posts/speakid-vs-ordinary-lessons/)
 - [Игры, которые превращают урок в шоу](/blog/posts/english-games-online/)

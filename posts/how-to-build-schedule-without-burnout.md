@@ -291,6 +291,7 @@ image: "/images/schedule-without-burnout.png"
 
 ### Читайте также
 
+- [Как сократить отмены уроков](/blog/posts/how-to-reduce-lesson-cancellations/) — политика отмен, ритуалы и фразы для WhatsApp.  
 - [Как поднять цену за урок английского](/blog/posts/how-to-increase-prices-for-lessons/) — когда и как говорить с родителями о стоимости.  
 - [Как репетитору найти учеников](/blog/posts/how-to-find-students-online/) — стабильный поток без хаоса в расписании.  
 - [Как вести уроки английского с детьми онлайн](/blog/posts/lessons-for-kids-online/) — структура урока от warm-up до финала.  
