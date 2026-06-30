@@ -1,0 +1,29 @@
+---
+description: Деплой speakid-blog на прод (scp + jekyll build)
+globs: speakid-blog/**
+alwaysApply: false
+---
+
+# Деплой блога speakid.ru/blog
+
+Блог **не на GitHub Pages**. Прод: `root@185.179.190.242:/opt/speakid-blog/` → `jekyll build` → `_site/` → nginx проксирует `/blog/` на `127.0.0.1:8082` (контейнер `speakid_blog`, nginx:alpine).
+
+## Команда деплоя
+
+Использовать скрипт `deploy.sh` в корне репозитория или вручную:
+
+```bash
+BLOG="/Users/mihailblinkov/Desktop/SPEAKID/SPEAKID.ED/speakid-blog"
+SERVER="root@185.179.190.242"
+
+scp ... "$SERVER:/opt/speakid-blog/..."   # посты, images, index.md, sitemap.xml
+ssh "$SERVER" "cd /opt/speakid-blog && chmod -R a+rX . && docker run --rm -v /opt/speakid-blog:/srv/jekyll -w /srv/jekyll jekyll/jekyll:pages jekyll build"
+```
+
+## Важно
+
+- Образ: **`jekyll/jekyll:pages`** (не `jekyll:4`, не `gem install`)
+- После `scp` **обязателен** `jekyll build` — иначе 404 (сайт читает `_site`, не `.md`)
+- Nginx и `speakid_blog` **не перезапускать**
+- Новая статья: пост + картинки + `index.md` + `sitemap.xml` + build
+- Не предлагать GitHub Pages, Gemfile, `bundle`, перезагрузку nginx без причины
