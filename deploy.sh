@@ -25,7 +25,13 @@ if [[ $# -gt 0 ]]; then
       posts/*) scp "$BLOG/$rel" "$SERVER:$REMOTE/posts/" ;;
       images/*) scp "$BLOG/$rel" "$SERVER:$REMOTE/images/" ;;
       assets/*) scp "$BLOG/$rel" "$SERVER:$REMOTE/assets/" ;;
-      index.md|sitemap.xml|_config.yml|robots.txt)
+      _includes/*) scp "$BLOG/$rel" "$SERVER:$REMOTE/_includes/" ;;
+      _layouts/*) scp "$BLOG/$rel" "$SERVER:$REMOTE/_layouts/" ;;
+      _data/*)
+        ssh "$SERVER" "mkdir -p $REMOTE/_data"
+        scp "$BLOG/$rel" "$SERVER:$REMOTE/_data/"
+        ;;
+      index.md|sitemap.xml|_config.yml|robots.txt|metodika.md|igry.md|dohod.md|onlajn-rabota.md)
         scp "$BLOG/$rel" "$SERVER:$REMOTE/" ;;
       *) echo "Неизвестный путь: $rel" >&2; exit 1 ;;
     esac

@@ -1,0 +1,18 @@
+<aside class="speakid-cta{% if include.variant == 'mid' %} speakid-cta-mid{% endif %}" aria-label="SPEAKID — 7 дней бесплатно">
+  <div class="speakid-cta-inner">
+    <div class="speakid-cta-content">
+      <span class="speakid-cta-badge">7 дней бесплатно</span>
+      <p class="speakid-cta-label">Для репетиторов 4–12</p>
+      <p class="speakid-cta-text">Не собирать урок из шести вкладок.</p>
+      {% unless include.variant == 'mid' %}
+      <ul class="speakid-cta-features">
+        <li><span class="speakid-cta-icon">📖</span> Программа</li>
+        <li><span class="speakid-cta-icon">🎮</span> Игры</li>
+        <li><span class="speakid-cta-icon">📅</span> Расписание</li>
+        <li><span class="speakid-cta-icon">💻</span> Классная комната</li>
+      </ul>
+      {% endunless %}
+    </div>
+    <a class="speakid-cta-btn" href="https://speakid.ru">Попробовать бесплатно →</a>
+  </div>
+</aside>

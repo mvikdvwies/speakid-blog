@@ -1,3 +1,8 @@
 .DS_Store
 *.DS_Store
 ._*
+
+# Локальные промпты и правила статей (не пушить)
+.cursor/prompts/
+.cursor/rules/article-writing.mdc
+.cursor/rules/article-cover.mdc

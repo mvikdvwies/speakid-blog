@@ -22,6 +22,9 @@
           {{ page.date | date: "%d.%m.%Y" }}
         </span>
         {% endif %}
+        {% if page.updated and page.updated != page.date %}
+        <span class="post-date-updated">Обновлено {{ page.updated | date: "%d.%m.%Y" }}</span>
+        {% endif %}
         {% include reading-time.html %}
       </div>
       
@@ -35,6 +38,10 @@
         {{ content }}
       </div>
 
+      {% unless page.cta == false %}
+      {% include cta-speakid.html %}
+      {% endunless %}
+
       {% if page.tags and page.tags.size > 0 %}
       <footer class="post-footer">
         <div class="post-tags">
@@ -46,6 +53,22 @@
       {% endif %}
     </article>
 
+    {% unless page.cta == false %}
+    <template id="speakid-cta-mid-template">
+      {% include cta-speakid.html variant="mid" %}
+    </template>
+    <script>
+    (function () {
+      var content = document.querySelector('.post-content');
+      var tpl = document.getElementById('speakid-cta-mid-template');
+      if (!content || !tpl || !tpl.content) return;
+      var headings = content.querySelectorAll('h2');
+      if (headings.length < 2) return;
+      var node = tpl.content.cloneNode(true);
+      headings[1].parentNode.insertBefore(node, headings[1].nextSibling);
+    })();
+    </script>
+    {% endunless %}
+
   </body>
 </html>
-

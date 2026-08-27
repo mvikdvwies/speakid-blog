@@ -25,5 +25,6 @@ ssh "$SERVER" "cd /opt/speakid-blog && chmod -R a+rX . && docker run --rm -v /op
 - Образ: **`jekyll/jekyll:pages`** (не `jekyll:4`, не `gem install`)
 - После `scp` **обязателен** `jekyll build` — иначе 404 (сайт читает `_site`, не `.md`)
 - Nginx и `speakid_blog` **не перезапускать**
-- Новая статья: пост + картинки + `index.md` + `sitemap.xml` + build
+- Новая статья: пост + картинки + запись в `_data/articles.yml` + `sitemap.xml` + `jekyll build`
+- Категории — URL `/metodika/`, `/igry/`, `/dohod/`, `/onlajn-rabota/` (не JS-фильтр)
 - Не предлагать GitHub Pages, Gemfile, `bundle`, перезагрузку nginx без причины

@@ -597,6 +597,132 @@ small {
   font-weight: 400;
 }
 
+.post-date-updated {
+  font-size: var(--font_size_small);
+  color: var(--color_grey_dark);
+  font-weight: 400;
+}
+
+.speakid-cta {
+  margin: 40px 0 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f04f4f 0%, #e12f2f 100%);
+  border: none;
+  border-radius: var(--radius_medium);
+  box-shadow: 0 8px 24px rgba(240, 79, 79, 0.25);
+  overflow: hidden;
+}
+
+.speakid-cta-mid {
+  margin: 32px 0;
+}
+
+.speakid-cta-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 28px;
+}
+
+.speakid-cta-content {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.speakid-cta-badge {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color_white);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.speakid-cta-label {
+  margin: 0 0 6px;
+  font-size: var(--font_size_small);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.speakid-cta-text {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+.speakid-cta-mid .speakid-cta-text {
+  margin-bottom: 0;
+}
+
+.speakid-cta-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.speakid-cta-features li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font_size_small);
+  font-weight: 600;
+  color: var(--color_white);
+}
+
+.speakid-cta-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.speakid-cta-btn {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 12px 24px;
+  background: var(--color_white);
+  color: var(--color_red_default);
+  border: none;
+  border-bottom: none;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: var(--font_size_default);
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.speakid-cta-btn:hover {
+  background: var(--color_white);
+  color: var(--color_red_active);
+  border-bottom: none;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 600px) {
+  .speakid-cta-inner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .speakid-cta-btn {
+    text-align: center;
+  }
+}
+
 .post-title {
   font-size: var(--font_size_big);
   font-weight: 700;
@@ -885,6 +1011,8 @@ small {
   color: #666666;
   cursor: pointer;
   transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .filter-btn:hover {

@@ -1,0 +1,16 @@
+- name: Методика
+  slug: metodika
+  permalink: /metodika/
+  description: "TPR, warm-up, структура урока и ошибки, из-за которых дети уходят. Методика ESL для репетиторов 4–12."
+- name: Игры
+  slug: igry
+  permalink: /igry/
+  description: "Игры и активности для онлайн-урока английского с детьми 4–12: правила, возраст, когда применять."
+- name: Доход
+  slug: dohod
+  permalink: /dohod/
+  description: "Поиск учеников, ставка за урок, УТП и повышение цены для независимого репетитора английского."
+- name: Онлайн-работа
+  slug: onlajn-rabota
+  permalink: /onlajn-rabota/
+  description: "Расписание, отмены, инструменты и работа с родителями на онлайн-уроках английского с детьми."

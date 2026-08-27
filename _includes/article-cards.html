@@ -1,0 +1,16 @@
+{% assign items = site.data.articles %}
+{% if include.category %}
+  {% assign items = site.data.articles | where: "category", include.category %}
+{% endif %}
+{% for item in items %}
+{% include article-card.html
+  url=item.url
+  title=item.title
+  description=item.description
+  date=item.date
+  category=item.category
+  tags=item.tags
+  reading_time=item.reading_time
+  image=item.image
+%}
+{% endfor %}

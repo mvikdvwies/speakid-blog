@@ -3,9 +3,65 @@
 
   <url>
     <loc>https://speakid.ru/blog/</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://speakid.ru/blog/metodika/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://speakid.ru/blog/igry/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://speakid.ru/blog/dohod/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://speakid.ru/blog/onlajn-rabota/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://speakid.ru/blog/posts/trial-lesson-25-minutes-script/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://speakid.ru/blog/posts/how-much-to-charge-for-english-lessons-kids/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://speakid.ru/blog/posts/how-to-message-parents-whatsapp/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://speakid.ru/blog/posts/child-silent-online-english-lesson/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
   <url>
@@ -31,7 +87,7 @@
 
   <url>
     <loc>https://speakid.ru/blog/posts/how-to-reduce-lesson-cancellations/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -101,21 +157,21 @@
 
   <url>
     <loc>https://speakid.ru/blog/posts/first-article-new/</loc>
-    <lastmod>2025-12-01</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://speakid.ru/blog/posts/lessons-for-kids-online/</loc>
-    <lastmod>2025-12-01</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://speakid.ru/blog/posts/english-games-online/</loc>
-    <lastmod>2025-12-01</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>

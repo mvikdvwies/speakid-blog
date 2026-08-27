@@ -1,0 +1,6 @@
+<nav class="category-filter" aria-label="Категории блога">
+  <a href="{{ '/' | relative_url }}" class="filter-btn{% if page.layout == 'home' %} active{% endif %}">Все</a>
+  {% for cat in site.data.categories %}
+  <a href="{{ cat.permalink | relative_url }}" class="filter-btn{% if page.category == cat.name %} active{% endif %}">{{ cat.name }}</a>
+  {% endfor %}
+</nav>

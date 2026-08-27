@@ -1,17 +1,38 @@
+{% assign cat_entry = false %}
+{% if page.category %}
+  {% for c in site.data.categories %}
+    {% if c.name == page.category %}
+      {% assign cat_entry = c %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
 <nav class="breadcrumbs" aria-label="Хлебные крошки">
   <ol itemscope itemtype="https://schema.org/BreadcrumbList">
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a itemprop="item" href="/blog/">
+      <a itemprop="item" href="{{ '/' | relative_url }}">
         <span itemprop="name">Главная</span>
       </a>
       <meta itemprop="position" content="1" />
     </li>
-    {% if page.layout == 'post' %}
+    {% if page.layout == 'category' %}
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
       <span aria-label="separator">›</span>
-      <a itemprop="item" href="/blog/#articles">
+      <span itemprop="name">{{ page.category }}</span>
+      <meta itemprop="position" content="2" />
+    </li>
+    {% elsif page.layout == 'post' %}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span aria-label="separator">›</span>
+      {% if cat_entry %}
+      <a itemprop="item" href="{{ cat_entry.permalink | relative_url }}">
+        <span itemprop="name">{{ page.category }}</span>
+      </a>
+      {% else %}
+      <a itemprop="item" href="{{ '/' | relative_url }}">
         <span itemprop="name">Статьи</span>
       </a>
+      {% endif %}
       <meta itemprop="position" content="2" />
     </li>
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -22,6 +43,3 @@
     {% endif %}
   </ol>
 </nav>
-
-
-

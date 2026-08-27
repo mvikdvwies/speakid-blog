@@ -41,7 +41,7 @@
   {% endunless %}
 {% endunless %}
 
-<article class="article-card" data-category="{{ include.category }}" data-tags="{{ include.tags | join: ',' }}">
+<article class="article-card" data-category="{{ include.category }}" data-tags="{{ include.tags }}">
   <a href="{{ post_url }}" class="article-card-link">
     {% if article_image %}
     <div class="article-card-image">

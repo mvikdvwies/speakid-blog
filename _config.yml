@@ -6,3 +6,10 @@ url: "https://speakid.ru"
 
 # URL постов совпадают с sitemap: /blog/posts/:title/
 permalink: /posts/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      author: SPEAKID
